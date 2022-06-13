@@ -14,7 +14,6 @@ def extract_gtm(page_content):
     if match is not None:
         return match.group(2)
 
-
 def get_links(page_content, main_url):
     uniq_urls = set()
     soup = BeautifulSoup(page_content, "html.parser")
